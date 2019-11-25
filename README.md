@@ -1,3 +1,6 @@
+![docs](https://docs.rs/rumi/badge.svg)
+![crates.io](https://img.shields.io/crates/v/rumi.svg)
+
 **This is beta software, use at your own risk**
 
 # rumi
