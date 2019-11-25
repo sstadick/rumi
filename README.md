@@ -1,3 +1,5 @@
+**This is beta software, use at your own risk**
+
 # rumi
 
 Rust UMI based PCR deduplication based on the directional adjacency
@@ -52,8 +54,15 @@ ARGS:
 ## Performance
 
 I have not sat down and done any serious benchmarking yet. Anecdotally
-this is at least 4X faster than umi_tools. There are *A LOT* of low
-hanging fruit in terms of optimizations to apply though.
+this is at least 4X faster than umi_tools on small datasets. There are
+*A LOT* of low hanging fruit in terms of optimizations to apply though.
+
+I would fully expect that this implementation should be capable of at
+least a 10x performance boost once it's been smoothed out. The large
+advantage this has over umi_tools is that it can take advantage of
+multiple cores. umi_tools has already shifted a large amount of it's
+work into C code, so just having a compiled language isn't a huge
+advantage. 
 
 ## Known differences from umi_tools
 
@@ -73,8 +82,8 @@ hanging fruit in terms of optimizations to apply though.
 
 ## Prior Art
 
-[UMICollapse](https://www.biorxiv.org/content/10.1101/648683v1)
-[UMITools](https://genome.cshlp.org/content/early/2017/01/18/gr.209601.116.abstract)
+- [UMICollapse](https://www.biorxiv.org/content/10.1101/648683v1)
+- [UMITools](https://genome.cshlp.org/content/early/2017/01/18/gr.209601.116.abstract)
 
 ## Notes
 
