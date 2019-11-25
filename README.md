@@ -12,7 +12,41 @@ cargo install --path .
 ## Usage
 
 ```bash
-rumi input.bam -o output.bam
+$ rumi --help
+rumi-dedup 0.1.0
+Seth Stadick <sstadick@gmail.com>
+Deduplicate reads based on umis
+
+USAGE:
+    rumi [FLAGS] [OPTIONS] <INBAM> --output <OUTBAM> --umi_tag <umi_tag>
+
+FLAGS:
+        --group_only           Don't deduplicate reads, just group them given them agroup id, and print them. Rules
+                                               for filtering out unpaired reads, etc, will still be applied.
+    -h, --help                 Prints help information
+        --ignore_splice_pos    If two reads have the same start pos, and contain a splice site, they will be
+                                                    grouped together, instead of further splitting them based on the
+                               splice site
+        --is_paired            Input is paired end. Read pairs with unmapped read1 will be ignored.
+        --umi_in_read_id       The UMI is located in the read id after the last '_'. Otherwise use the RX tag.
+    -V, --version              Prints version information
+
+OPTIONS:
+    -o, --output <OUTBAM>                                  Output bam file. Use - if stdout [default: -]
+    -c, --allowed_count_factor <allowed_count_factor>
+            The factor to multiply the count of a umi by when determining whether or not to group it with other umis
+            within allowed_read_dist. include umi_b as adjacent to umi_a if: umi_a.counts >= allowed_count_factor *
+            umi_b.counts [default: 2]
+    -n, --allowed_network_depth <allowed_network_depth>
+            The number of nodes deep to go when creating a group. If allowed_read_dist 1, then allowed_network_depth of
+            2 will enable getting all umis with hamming distance of 2 from current umi. [default: 2]
+    -d, --allowed_read_dist <allowed_read_dist>
+            The distance between umis that will allow them to be counted as adjacent. [default: 1]
+
+    -u, --umi_tag <umi_tag>                                The tag holding the umi information. [default: RX]
+
+ARGS:
+    <INBAM>    Input bam file. Use - if stdin [default: -]
 ```
 
 ## Performance
