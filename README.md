@@ -7,8 +7,11 @@ as UMI-tools but with a constant time hamming distance implementation.
 
 ## Install
 
+For now this relies on the rust toolchain. There are excellent docs on
+how to set that up.
+
 ```
-cargo install --path .
+cargo install rumi
 ```
 
 ## Usage
