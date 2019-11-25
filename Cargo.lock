@@ -456,7 +456,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "rumi"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "basebits 1.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "clap 2.33.0 (registry+https://github.com/rust-lang/crates.io-index)",
