@@ -12,7 +12,7 @@ cargo install --path .
 ## Usage
 
 ```bash
-rumi-dedup input.bam -o output.bam
+rumi input.bam -o output.bam
 ```
 
 ## Performance
@@ -35,6 +35,7 @@ hanging fruit in terms of optimizations to apply though.
 - Add better (any) error handling
 - Figure out how to reduce allocations / string clones
 - Clarify the workflow / what actually happens in docs
+- Allow for selection of number of cores to use
 
 ## Prior Art
 
