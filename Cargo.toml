@@ -1,0 +1,19 @@
+[package]
+name = "rumi"
+version = "0.1.0"
+authors = ["Seth Stadick <sstadick@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "rumi_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rumi"
+path = "src/main.rs"
+
+[dependencies]
+clap = "2.33"
+rust-htslib = "0.26"
+rayon = "1.1"
+basebits = "0.2"
