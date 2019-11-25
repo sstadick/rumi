@@ -55,7 +55,7 @@ dependencies = [
 
 [[package]]
 name = "basebits"
-version = "0.2.1"
+version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
@@ -456,9 +456,9 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "rumi"
-version = "0.1.0"
+version = "0.2.0"
 dependencies = [
- "basebits 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "basebits 1.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "clap 2.33.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "rayon 1.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "rust-htslib 0.26.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -732,7 +732,7 @@ dependencies = [
 "checksum atty 0.2.13 (registry+https://github.com/rust-lang/crates.io-index)" = "1803c647a3ec87095e7ae7acfca019e98de5ec9a7d01343f611cf3152ed71a90"
 "checksum backtrace 0.3.40 (registry+https://github.com/rust-lang/crates.io-index)" = "924c76597f0d9ca25d762c25a4d369d51267536465dc5064bdf0eb073ed477ea"
 "checksum backtrace-sys 0.1.32 (registry+https://github.com/rust-lang/crates.io-index)" = "5d6575f128516de27e3ce99689419835fce9643a9b215a14d2b5b685be018491"
-"checksum basebits 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "62e0e8e6e10be8153b3c654a83e4c0957028e76c0c8abe6be1a3d6a51ef5128a"
+"checksum basebits 1.2.0 (registry+https://github.com/rust-lang/crates.io-index)" = "69f3db33e4edf4c39520cb08ab3f0f90a804c97a3752696916add2e89be7297f"
 "checksum bindgen 0.51.1 (registry+https://github.com/rust-lang/crates.io-index)" = "ebd71393f1ec0509b553aa012b9b58e81dadbdff7130bd3b8cba576e69b32f75"
 "checksum bio-types 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)" = "94fb49f226ebd14a668fbcf268241a3d81021e4f6882dda8bbc42f05ea823fd4"
 "checksum bitflags 1.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "cf1de2fe8c75bc145a2f577add951f8134889b4795d47466a54a5c846d691693"

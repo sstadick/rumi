@@ -1,4 +1,4 @@
-# rumi-dedup
+# rumi
 
 Rust UMI based PCR deduplication based on the directional adjacency
 as UMI-tools but with a constant time hamming distance implementation.

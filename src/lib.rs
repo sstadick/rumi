@@ -1,4 +1,4 @@
-use basebits::{hamming_dist, BaseBits};
+use basebits::{hamming_dist_none, BaseBits};
 //use rayon::iter::ParBridge;
 use rayon::prelude::*;
 use rust_htslib::bam::errors::Error;
@@ -523,7 +523,7 @@ pub fn connect_graph(mut graph: Vec<Node>, dist: u32, counts_factor: u32) -> Vec
             if i == j {
                 continue;
             }
-            if hamming_dist(&graph[i].umi, &graph[j].umi) <= dist
+            if hamming_dist_none(&graph[i].umi, &graph[j].umi) <= dist
                 && graph[i].freq.freq >= (counts_factor * graph[j].freq.freq) - 1
             {
                 graph[i].connections.push(j);

@@ -1,6 +1,6 @@
 [package]
 name = "rumi"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Seth Stadick <sstadick@gmail.com>"]
 edition = "2018"
 
@@ -16,4 +16,4 @@ path = "src/main.rs"
 clap = "2.33"
 rust-htslib = "0.26"
 rayon = "1.1"
-basebits = "0.2"
+basebits = "1.2.0"
