@@ -29,6 +29,13 @@ hanging fruit in terms of optimizations to apply though.
   longer. In cases of an absolute tie, the incumbant read wins. This can
   lead to differences in results, especially among reverse reads.
 
+## TODO
+
+- Clean up the lib and split out into multiple modules
+- Add better (any) error handling
+- Figure out how to reduce allocations / string clones
+- Clarify the workflow / what actually happens in docs
+
 ## Prior Art
 
 [UMICollapse](https://www.biorxiv.org/content/10.1101/648683v1)
