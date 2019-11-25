@@ -11,9 +11,9 @@ use rumi_lib;
 use std::process;
 
 fn main() {
-    let matches = App::new("rumi-dedup")
-        .version("0.1.0")
-        .author("Seth Stadick <sstadick@gmail.com>")
+    let matches = App::new("rumi")
+        .version(crate_version!())
+        .author(crate_authors!())
         .about("Deduplicate reads based on umis")
         .arg(
             Arg::with_name("INBAM")
