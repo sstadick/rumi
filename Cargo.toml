@@ -1,11 +1,12 @@
 [package]
 name = "rumi"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Seth Stadick <sstadick@gmail.com>"]
 edition = "2018"
 license = "MIT"
 repository = "https://github.com/sstadick/rumi"
 description = "PCR Deduplication via directional adjacency"
+readme = "README.md"
 documentation = "https://docs.rs/rumi"
 categories = ["algorithms", "science"]
 keywords = ["bioinformatics", "umi", "dedup", "genomics"]
